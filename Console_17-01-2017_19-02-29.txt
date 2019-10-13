@@ -1,0 +1,55 @@
+Number of samples to test: 16 , to train: 16, first sample size:=28  28, var=404.6862782469, min=5.000000, max=119.000000
+    <strong>trainLoopCount</strong><strong>    testImageNum</strong><strong>    batchNum</strong><strong>    ni_initial</strong><strong>    ni_final</strong><strong>    noImprovementTh</strong><strong>    momentum</strong><strong>    constInitWeight</strong><strong>    lambda</strong><strong>    errorMethod</strong><strong>    testOnData</strong><strong>    addBackround</strong><strong>    testOnNull</strong><strong>    augmentImage</strong><strong>    augmentParams</strong><strong>    centralizeImage</strong><strong>    cropImage</strong><strong>    flipImage</strong><strong>    useRandomPatch</strong><strong>    testNumPatches</strong><strong>    selevtivePatchVarTh</strong><strong>    testOnMiddlePatchOnly</strong><strong>    normalizeNetworkInput</strong><strong>     sizeFmInput  </strong><strong>    numFmInput</strong>
+    <strong>______________</strong>    <strong>____________</strong>    <strong>________</strong>    <strong>__________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>______</strong>    <strong>___________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>_______________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>______________</strong>    <strong>______________</strong>    <strong>___________________</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    10                20              1           0.05          0.025       50                 0           NaN                0         1              0             0               0             0               [1x1 struct]     0                  0            0            0                 1                 0                      0                        1                        28    28     1    1         
+
+    <strong>storeMaxMSENet</strong><strong>    verifyBP</strong><strong>    displayConvNet</strong><strong>    batchIdx</strong><strong>    iter</strong><strong>    samplesLearned</strong><strong>    maxsucessRate</strong><strong>    noImprovementCount</strong><strong>    minMSE</strong><strong>    improvementRefMSE</strong><strong>      endSeed   </strong><strong>    datasetInfo </strong>
+    <strong>______________</strong>    <strong>________</strong>    <strong>______________</strong>    <strong>________</strong>    <strong>____</strong>    <strong>______________</strong>    <strong>_____________</strong>    <strong>__________________</strong>    <strong>______</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>____________</strong>
+
+    0                 1           0                 0           0       0                 0                0                     Inf       Inf                  [1x1 struct]    [1x1 struct]
+
+Layer 1: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>      kernel   </strong><strong>        pad    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       12       5    5    1    2    2    0    1                   28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    1    1    1    28    28     1    312           [1x28 double]    [1x28 double]    [1]
+
+Layer 2: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>        kernel    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>        pad    </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>______________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       24       13    13     1    12                  28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    0    0    0    1    1    1    16    16     1    48696         [1x16 double]    [1x16 double]    [1]
+
+Layer 3: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       128      24                  16    16     1       1          [1x1 function_handle]    [1x1 function_handle]    1      7.8656e+05
+
+Layer 4: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       10       128                 1                    1          [1x1 function_handle]    [1x1 function_handle]    1      1290      
+
+Network properties:
+
+    <strong>numLayers</strong><strong>    numOutputs</strong><strong>    version</strong><strong>      sources   </strong><strong>    numWeights</strong><strong>      sizeInput   </strong><strong>    InputNumFm</strong>
+    <strong>_________</strong>    <strong>__________</strong>    <strong>_______</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    4            10            1.1        [4x1 struct]    8.3686e+05    28    28     1    1         
+
+Verifying backProp..Network is OK. Verification time=13.67
+[Warning: Training samples does not contain all classes. These should be 10 unique classes in training set, but it looks
+like there are 2 classes] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Train', 'E:\Projects\Final Human Activity\Human Alone\Training\Train.m', 47)" style="font-weight:bold">Train</a> (<a href="matlab: opentoline('E:\Projects\Final Human Activity\Human Alone\Training\Train.m',47,0)">line 47</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Final Human Activity\Human Alone\Demo\MNIST\demoMnist.m', 77)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Final Human Activity\Human Alone\Demo\MNIST\demoMnist.m',77,0)">line 77</a>)] 
+[Warning: Training samples apear not to be in random order. For training to work well, class order in dataset need to be
+random. Please suffle labels and I (using the same seed) before passing to Train] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Train', 'E:\Projects\Final Human Activity\Human Alone\Training\Train.m', 50)" style="font-weight:bold">Train</a> (<a href="matlab: opentoline('E:\Projects\Final Human Activity\Human Alone\Training\Train.m',50,0)">line 50</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Final Human Activity\Human Alone\Demo\MNIST\demoMnist.m', 77)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Final Human Activity\Human Alone\Demo\MNIST\demoMnist.m',77,0)">line 77</a>)] 
+Start training iterations
+Iter 1  | Imgs=10   | time=1.45  | TrainErr=0.105559 | meanGrad=0.060023 | meanWeight=0.010789 | varWeight=0.000211 | MSE=3.029874 | scesRate=40.00% | minMSE=3.029874 | maxS=40.00% | ni=0.050000 | tstTime=0.28 | totalTime=1.89 | noImpCnt=0/50
+Iter 2  | Imgs=20   | time=1.18  | TrainErr=0.049141 | meanGrad=0.031638 | meanWeight=0.010794 | varWeight=0.000212 | MSE=2.448295 | scesRate=60.00% | minMSE=2.448295 | maxS=60.00% | ni=0.050000 | tstTime=0.27 | totalTime=4.54 | noImpCnt=0/50
+Finish training. max samples reached

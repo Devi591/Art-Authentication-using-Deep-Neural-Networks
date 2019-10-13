@@ -1,0 +1,677 @@
+Number of samples to test: 38 , to train: 38, first sample size:=28  28, var=404.6862782469, min=5.000000, max=119.000000
+    <strong>trainLoopCount</strong><strong>    testImageNum</strong><strong>    batchNum</strong><strong>    ni_initial</strong><strong>    ni_final</strong><strong>    noImprovementTh</strong><strong>    momentum</strong><strong>    constInitWeight</strong><strong>    lambda</strong><strong>    errorMethod</strong><strong>    testOnData</strong><strong>    addBackround</strong><strong>    testOnNull</strong><strong>    augmentImage</strong><strong>    augmentParams</strong><strong>    centralizeImage</strong><strong>    cropImage</strong><strong>    flipImage</strong><strong>    useRandomPatch</strong><strong>    testNumPatches</strong><strong>    selevtivePatchVarTh</strong><strong>    testOnMiddlePatchOnly</strong><strong>    normalizeNetworkInput</strong><strong>     sizeFmInput  </strong><strong>    numFmInput</strong>
+    <strong>______________</strong>    <strong>____________</strong>    <strong>________</strong>    <strong>__________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>______</strong>    <strong>___________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>_______________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>______________</strong>    <strong>______________</strong>    <strong>___________________</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    10000             20000           1           0.05          0.0025      50                 0           NaN                0         1              0             0               0             0               [1x1 struct]     0                  0            0            0                 1                 0                      0                        1                        28    28     1    1         
+
+    <strong>storeMaxMSENet</strong><strong>    verifyBP</strong><strong>    displayConvNet</strong><strong>    batchIdx</strong><strong>    iter</strong><strong>    samplesLearned</strong><strong>    maxsucessRate</strong><strong>    noImprovementCount</strong><strong>    minMSE</strong><strong>    improvementRefMSE</strong><strong>      endSeed   </strong><strong>    datasetInfo </strong>
+    <strong>______________</strong>    <strong>________</strong>    <strong>______________</strong>    <strong>________</strong>    <strong>____</strong>    <strong>______________</strong>    <strong>_____________</strong>    <strong>__________________</strong>    <strong>______</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>____________</strong>
+
+    0                 1           0                 0           0       0                 0                0                     Inf       Inf                  [1x1 struct]    [1x1 struct]
+
+Layer 1: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>      kernel   </strong><strong>        pad    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       4        4    4    1    2    2    0    1                   28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    1    1    1    29    29     1    68            [1x29 double]    [1x29 double]    [1]
+
+Layer 2: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>      kernel   </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>        pad    </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>___________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       5        6    6    1    4                   29    29     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    0    0    0    1    1    1    24    24     1    725           [1x24 double]    [1x24 double]    [1]
+
+Layer 3: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       60       5                   24    24     1       1          [1x1 function_handle]    [1x1 function_handle]    1      1.7286e+05
+
+Layer 4: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       5        60                  1                    1          [1x1 function_handle]    [1x1 function_handle]    1      305       
+
+Network properties:
+
+    <strong>numLayers</strong><strong>    numOutputs</strong><strong>    version</strong><strong>      sources   </strong><strong>    numWeights</strong><strong>      sizeInput   </strong><strong>    InputNumFm</strong>
+    <strong>_________</strong>    <strong>__________</strong>    <strong>_______</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    4            5             1.1        [4x1 struct]    1.7396e+05    28    28     1    1         
+
+Verifying backProp..Network is OK. Verification time=2.07
+[Warning: Training samples apear not to be in random order. For training to work well, class order in
+dataset need to be random. Please suffle labels and I (using the same seed) before passing to Train] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Train', 'E:\Projects\Renisha Codes Final\Human Alone\Training\Train.m', 50)" style="font-weight:bold">Train</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Training\Train.m',50,0)">line 50</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m', 118)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m',118,0)">line 118</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'E:\toolbox\matlab\lang\run.m', 96)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('E:\toolbox\matlab\lang\run.m',96,0)">line 96</a>)] 
+Start training iterations
+Iter 1  | Imgs=10000 | time=270.88 | TrainErr=0.027977 | meanGrad=0.009019 | meanWeight=0.023160 | varWeight=0.001755{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('feedForward', 'E:\Projects\Renisha Codes Final\Human Alone\mdCNN\feedForward.m', 37)" style="font-weight:bold">feedForward</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\mdCNN\feedForward.m',37,0)">line 37</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Train', 'E:\Projects\Renisha Codes Final\Human Alone\Training\Train.m', 231)" style="font-weight:bold">Train</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Training\Train.m',231,0)">line 231</a>)
+             outs = feedForward(net.layers, patch , 1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m', 118)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m',118,0)">line 118</a>)
+net   =  Train(MNIST,net, 16);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'E:\toolbox\matlab\lang\run.m', 96)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('E:\toolbox\matlab\lang\run.m',96,0)">line 96</a>)
+evalin('caller', [script ';']);
+} 
+tr_f='Img/train';
+a=dir(tr_f);
+a
+
+a = 
+
+40x1 <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> array with fields:
+
+    name
+    date
+    bytes
+    isdir
+    datenum
+
+a(1)
+
+ans = 
+
+       name: '.'
+       date: '12-Feb-2017 07:03:23'
+      bytes: 0
+      isdir: 1
+    datenum: 7.3674e+05
+
+a(2)
+
+ans = 
+
+       name: '..'
+       date: '12-Feb-2017 07:03:23'
+      bytes: 0
+      isdir: 1
+    datenum: 7.3674e+05
+
+a(3)
+
+ans = 
+
+       name: 'a1.png'
+       date: '17-Jan-2017 16:37:41'
+      bytes: 20610
+      isdir: 0
+    datenum: 7.3671e+05
+
+a(4)
+
+ans = 
+
+       name: 'a2.png'
+       date: '17-Jan-2017 16:38:10'
+      bytes: 16845
+      isdir: 0
+    datenum: 7.3671e+05
+
+a(5)
+
+ans = 
+
+       name: 'a3.png'
+       date: '17-Jan-2017 16:38:48'
+      bytes: 22081
+      isdir: 0
+    datenum: 7.3671e+05
+
+a(6)
+
+ans = 
+
+       name: 'a4.png'
+       date: '17-Jan-2017 16:38:56'
+      bytes: 17403
+      isdir: 0
+    datenum: 7.3671e+05
+
+a(40)
+
+ans = 
+
+       name: 'e9.png'
+       date: '08-Feb-2017 08:00:15'
+      bytes: 30598
+      isdir: 0
+    datenum: 7.3673e+05
+
+a(41)
+{Index exceeds matrix dimensions.
+} 
+clc
+a
+
+a = 
+
+40x1 <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> array with fields:
+
+    name
+    date
+    bytes
+    isdir
+    datenum
+
+a(1).name
+
+ans =
+
+.
+
+a(2).name
+
+ans =
+
+..
+
+a(3).name
+
+ans =
+
+a1.png
+
+ind=size(a,1)
+
+ind =
+
+    40
+
+I
+
+I = 
+
+  Columns 1 through 6
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 7 through 12
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 13 through 18
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 19 through 24
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 25 through 30
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 31 through 36
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 37 through 38
+
+    [28x28 uint8]    [28x28 uint8]
+
+I{38}
+
+ans =
+
+  Columns 1 through 21
+
+  130    6   16   16   16   16   17   17   18   16   16   16   15   15   17   17   16   16   16   15   15
+  130    6   16   16   19   19   18   19   19   16   16   16   16   17   17   14   14   16   15   15   15
+  131    6   16   17   20  103  115   21   14   15   16   16   17   17   18   43   64   34   16   15   16
+  130    7   18   18   22  156  184  107   48   15   17   18   19   16   88  192  179   98   16   18   17
+  131    7   17   16   54  153  168  171   97   19   16   17   17   18  138  153   62  120   34   18   23
+  131    7   15   52  153  195  103   72  102   32   16   19   16   40  164   93   17  109   78   17   31
+  131    7   14   76  167   90   23   18   76   44   18   19   15   99  169   53   14   41   67   21   37
+  131    6   16   62   89   23   17   16   55   58   16   19   19   82   62   19   18   24   48   21   27
+  131    6   19   80   69   15   20   18   38   62   18   18   49  141   68   15   17   22   46   24   15
+  131    8   36  146  104   32   24   17   20   47   20   26  129  110   26   16   20   20   47   30   21
+  130   10   90  145   77  105  118  142   95   51   20   34  103  111   91   69  119   69   46   38   31
+  130   17  104   80   42   39   56  122  219  131   27   69   80   40   50  100  129  181  130   49   54
+  132   25   75  107  128   42   16   22  171  205   74  130  127  113   54   40   26  161  222  102   93
+  146  109  161  160  185  172  106   17   88  213  165  178  165  180  178  153   68   75  215  168  177
+  163  194  165   92  137  175  194  135  142  190  189  184  184  187  191  188  174  149  200  206  184
+  143  107  142  164  184  186  130  139  145  147  121  159  164  162  178  162  120  133  174  158  127
+  160  161  164  186  126  154  186  193  198  178  179  183  130  159  195  166  160  159  165  162  151
+  167  209  181  167  186  184  202  201  179  121  180  176  187  160  181  212  192  115  131  182  190
+  151  189  180  133  201  196  188  134   86   88  178  192  170  192  185  199  157  130  137  179  193
+  158  167  208  148  131  174  157   90  136  126  159  207  143  106  176  184  162   79  110  152  151
+  159  138  204  183   50   54   82  145  131  179  117  192  182   29   34  102   90   49  152  128   91
+  150   62  153  209  102   26  128   55  110  194   95  129  217   93   34  116   57  170  179   79   24
+  139   31   61  140  186  129  130   33  167  142   29   52  160  183  166  140   93  181   55   15   15
+  132   23   61   39   93  156  104   94  181   84   15   52   62   79  103  132  176  162   32   18   21
+  131   16   84  101   68  128  157  171  185   57   13   65  104   63  114  145  176   84   15   20   29
+  131   16   81  105   92   76   55  140  150   37   17   29   67   87   78   38   75   31   17   17   21
+  131   11   30   19   14   12   48  170   68   17   18   17   15   14   14   17   14   17   16   17   17
+  130    8   18   17   19   18   31   95   36   16   17   16   16   17   18   18   17   18   17   16   16
+
+  Columns 22 through 28
+
+   15   15   15   16   17   17   12
+   15   15   14   15   14   16   11
+   15   20   38   27   31   18   12
+   16   43  122  113  146   85   14
+   28   69  181  189  179  115   19
+   64   78  158  143   95   86   25
+   97  133  126   42   19   86   45
+   82  160  167   72   13   54   55
+   60  168  169   78   14   30   49
+  111  185  147   54   16   23   44
+  107  151  146   27   28   21   34
+  109   92  111  112  157  134   44
+  138   84   52   49   79  208  148
+  198  186  105   12   17  102  148
+  160  167  200  123   48   69  161
+  159  181  188  205  151  169  124
+  144  139  166  141  125  153  108
+  195  166  172  198  189  183  153
+  201  194  196  192  188  166  139
+  184  168  199  182  148  164  123
+  209  155  156   97  131  124  148
+  140  136   27  100  137   71  134
+  104  200  135  161   71   78  132
+   42  100  185  144   90  116  121
+   80   77  149  148  157  197   89
+   82  150  123   37   39   85   20
+   21   48   53   27   15   15   12
+   17   15   18   19   18   17   13
+
+
+
+
+
+clc
+findstr(temp,'a')
+
+ans =
+
+     []
+
+temp
+
+temp =
+
+e9.png
+
+findstr(temp,'e')
+
+ans =
+
+     1
+
+jj=[]
+
+jj =
+
+     []
+
+jj=[jj;1]
+
+jj =
+
+     1
+
+jj=[jj;2]
+
+jj =
+
+     1
+     2
+
+jj=[jj;5]
+
+jj =
+
+     1
+     2
+     5
+
+clc
+labels
+
+labels =
+
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    1
+    1
+    1
+    1
+    1
+    1
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+
+
+
+
+I
+
+I = 
+
+  Columns 1 through 6
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 7 through 12
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 13 through 18
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 19 through 24
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 25 through 30
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 31 through 36
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 37 through 38
+
+    [28x28 uint8]    [28x28 uint8]
+
+labels
+
+labels =
+
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    1
+    1
+    1
+    1
+    1
+    1
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+
+labels_test
+
+labels_test =
+
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    1
+    1
+    1
+    1
+    1
+    1
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+
+I_test
+
+I_test = 
+
+  Columns 1 through 6
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 7 through 12
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 13 through 18
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 19 through 24
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 25 through 30
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 31 through 36
+
+    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]    [28x28 uint8]
+
+  Columns 37 through 38
+
+    [28x28 uint8]    [28x28 uint8]
+
+clc
+gh=12345
+
+gh =
+
+       12345
+
+save('adddd.mat','gh')
+clear gh
+gh
+{Undefined function or variable 'gh'.
+} 
+g2hclc
+{Undefined function or variable 'g2hclc'.
+} 
+re=load('adddd.mat')
+
+re = 
+
+    gh: 12345
+
+re.gh
+
+ans =
+
+       12345
+
+clc
+hhhh=load('MNIST.mat')
+
+hhhh = 
+
+              I: {1x38 cell}
+         I_test: {1x38 cell}
+         labels: [38x1 uint8]
+    labels_test: [38x1 uint8]
+
+clc
+jk=load('mm.mat')
+
+jk = 
+
+    mm: [0 0 0 0 0 0 0 0 1 1 1 1 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4]
+
+labels
+
+labels =
+
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    0
+    1
+    1
+    1
+    1
+    1
+    1
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    2
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    3
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+    4
+
+labels'
+
+ans =
+
+  Columns 1 through 21
+
+    0    0    0    0    0    0    0    0    1    1    1    1    1    1    2    2    2    2    2    2    2
+
+  Columns 22 through 38
+
+    2    3    3    3    3    3    3    3    3    4    4    4    4    4    4    4    4
+
+mm
+{Undefined function or variable 'mm'.
+} 
+jk.mm
+
+ans =
+
+  Columns 1 through 17
+
+     0     0     0     0     0     0     0     0     1     1     1     1     1     1     2     2     2
+
+  Columns 18 through 34
+
+     2     2     2     2     2     3     3     3     3     3     3     3     3     4     4     4     4
+
+  Columns 35 through 38
+
+     4     4     4     4
+
+demoMnist
+multi dimentional CNN , Hagay Garty 2016 | hagaygarty@gmail.com
+Initializing network..
+Initializing layer 1
+Initializing layer 2
+[Warning: Layer 2 input plus pad is 29  29   1 , not a power of 2. Might reduce speed] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('initNetWeight', 'E:\Projects\Renisha Codes Final\Human Alone\mdCNN\initNetWeight.m', 119)" style="font-weight:bold">initNetWeight</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\mdCNN\initNetWeight.m',119,0)">line 119</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CreateNet', 'E:\Projects\Renisha Codes Final\Human Alone\mdCNN\CreateNet.m', 27)" style="font-weight:bold">CreateNet</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\mdCNN\CreateNet.m',27,0)">line 27</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m', 9)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m',9,0)">line 9</a>)] 
+Initializing layer 3
+Initializing layer 4
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'E:\toolbox\matlab\imagesci\imread.p', 362)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('E:\toolbox\matlab\imagesci\imread.p',362,0)">line 362</a>)
+Unable to determine the file format.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m', 25)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m',25,0)">line 25</a>)
+    I{aa}=uint8(imresize(rgb2gray(imread(strcat(tr_f,'/',temp))),[28 28]));
+} 
+run('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m')
+multi dimentional CNN , Hagay Garty 2016 | hagaygarty@gmail.com
+Initializing network..
+Initializing layer 1
+Initializing layer 2
+[Warning: Layer 2 input plus pad is 29  29   1 , not a power of 2. Might reduce speed] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('initNetWeight', 'E:\Projects\Renisha Codes Final\Human Alone\mdCNN\initNetWeight.m', 119)" style="font-weight:bold">initNetWeight</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\mdCNN\initNetWeight.m',119,0)">line 119</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CreateNet', 'E:\Projects\Renisha Codes Final\Human Alone\mdCNN\CreateNet.m', 27)" style="font-weight:bold">CreateNet</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\mdCNN\CreateNet.m',27,0)">line 27</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m', 9)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('E:\Projects\Renisha Codes Final\Human Alone\Demo\MNIST\demoMnist.m',9,0)">line 9</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'E:\toolbox\matlab\lang\run.m', 96)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('E:\toolbox\matlab\lang\run.m',96,0)">line 96</a>)] 
+Initializing layer 3
+Initializing layer 4

@@ -1,0 +1,68 @@
+Number of samples to test: 10000 , to train: 60000, first sample size:=28  28, var=6352.0380388744, min=0.000000, max=255.000000
+    <strong>trainLoopCount</strong><strong>    testImageNum</strong><strong>    batchNum</strong><strong>    ni_initial</strong><strong>    ni_final</strong><strong>    noImprovementTh</strong><strong>    momentum</strong><strong>    constInitWeight</strong><strong>    lambda</strong><strong>    errorMethod</strong><strong>    testOnData</strong><strong>    addBackround</strong><strong>    testOnNull</strong><strong>    augmentImage</strong><strong>    augmentParams</strong><strong>    centralizeImage</strong><strong>    cropImage</strong><strong>    flipImage</strong><strong>    useRandomPatch</strong><strong>    testNumPatches</strong><strong>    selevtivePatchVarTh</strong><strong>    testOnMiddlePatchOnly</strong><strong>    normalizeNetworkInput</strong><strong>     sizeFmInput  </strong><strong>    numFmInput</strong>
+    <strong>______________</strong>    <strong>____________</strong>    <strong>________</strong>    <strong>__________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>______</strong>    <strong>___________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>_______________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>______________</strong>    <strong>______________</strong>    <strong>___________________</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    1000              2000            1           0.05          0.025       50                 0           NaN                0         1              0             0               0             0               [1x1 struct]     0                  0            0            0                 1                 0                      0                        1                        28    28     1    1         
+
+    <strong>storeMaxMSENet</strong><strong>    verifyBP</strong><strong>    displayConvNet</strong><strong>    batchIdx</strong><strong>    iter</strong><strong>    samplesLearned</strong><strong>    maxsucessRate</strong><strong>    noImprovementCount</strong><strong>    minMSE</strong><strong>    improvementRefMSE</strong><strong>      endSeed   </strong><strong>    datasetInfo </strong>
+    <strong>______________</strong>    <strong>________</strong>    <strong>______________</strong>    <strong>________</strong>    <strong>____</strong>    <strong>______________</strong>    <strong>_____________</strong>    <strong>__________________</strong>    <strong>______</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>____________</strong>
+
+    0                 1           0                 0           0       0                 0                0                     Inf       Inf                  [1x1 struct]    [1x1 struct]
+
+Layer 1: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>      kernel   </strong><strong>        pad    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       12       5    5    1    2    2    0    1                   28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    1    1    1    28    28     1    312           [1x28 double]    [1x28 double]    [1]
+
+Layer 2: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>        kernel    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>        pad    </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>______________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       24       13    13     1    12                  28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    0    0    0    1    1    1    16    16     1    48696         [1x16 double]    [1x16 double]    [1]
+
+Layer 3: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       128      24                  16    16     1       1          [1x1 function_handle]    [1x1 function_handle]    1      7.8656e+05
+
+Layer 4: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       10       128                 1                    1          [1x1 function_handle]    [1x1 function_handle]    1      1290      
+
+Network properties:
+
+    <strong>numLayers</strong><strong>    numOutputs</strong><strong>    version</strong><strong>      sources   </strong><strong>    numWeights</strong><strong>      sizeInput   </strong><strong>    InputNumFm</strong>
+    <strong>_________</strong>    <strong>__________</strong>    <strong>_______</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    4            10            1.1        [4x1 struct]    8.3686e+05    28    28     1    1         
+
+Verifying backProp..Network is OK. Verification time=14.27
+Start training iterations
+Iter 1  | Imgs=1000{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('backPropegate', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\backPropegate.m', 50)" style="font-weight:bold">backPropegate</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\backPropegate.m',50,0)">line 50</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Train', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Training\Train.m', 123)" style="font-weight:bold">Train</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Training\Train.m',123,0)">line 123</a>)
+         net = backPropegate(net, sample, expectedOut);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Demo\MNIST\demoMnist.m', 15)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Demo\MNIST\demoMnist.m',15,0)">line 15</a>)
+net   =  Train(MNIST,net, 15000);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'E:\toolbox\matlab\lang\run.m', 96)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('E:\toolbox\matlab\lang\run.m',96,0)">line 96</a>)
+evalin('caller', [script ';']);
+} 
+run('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Demo\MNIST\demoMnist.m')
+multi dimentional CNN , Hagay Garty 2016 | hagaygarty@gmail.com
+Initializing network..
+Initializing layer 1
+Initializing layer 2
+[Warning: Layer 2 input plus pad is 28  28   1 , not a power of 2. Might reduce speed] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('initNetWeight', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\initNetWeight.m', 119)" style="font-weight:bold">initNetWeight</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\initNetWeight.m',119,0)">line 119</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CreateNet', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\CreateNet.m', 33)" style="font-weight:bold">CreateNet</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\mdCNN\CreateNet.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('demoMnist', 'C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Demo\MNIST\demoMnist.m', 6)" style="font-weight:bold">demoMnist</a> (<a href="matlab: opentoline('C:\Users\Admin\Desktop\hagaygarty-mdCNN-ff72793\Demo\MNIST\demoMnist.m',6,0)">line 6</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'E:\toolbox\matlab\lang\run.m', 96)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('E:\toolbox\matlab\lang\run.m',96,0)">line 96</a>)] 
+Initializing layer 3
+Initializing layer 4

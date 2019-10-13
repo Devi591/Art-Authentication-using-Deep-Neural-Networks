@@ -1,0 +1,60 @@
+Number of samples to test: 10000 , to train: 60000, first sample size:=28  28, var=6352.0380388744, min=0.000000, max=255.000000
+    <strong>trainLoopCount</strong><strong>    testImageNum</strong><strong>    batchNum</strong><strong>    ni_initial</strong><strong>    ni_final</strong><strong>    noImprovementTh</strong><strong>    momentum</strong><strong>    constInitWeight</strong><strong>    lambda</strong><strong>    errorMethod</strong><strong>    testOnData</strong><strong>    addBackround</strong><strong>    testOnNull</strong><strong>    augmentImage</strong><strong>    augmentParams</strong><strong>    centralizeImage</strong><strong>    cropImage</strong><strong>    flipImage</strong><strong>    useRandomPatch</strong><strong>    testNumPatches</strong><strong>    selevtivePatchVarTh</strong><strong>    testOnMiddlePatchOnly</strong><strong>    normalizeNetworkInput</strong><strong>     sizeFmInput  </strong><strong>    numFmInput</strong>
+    <strong>______________</strong>    <strong>____________</strong>    <strong>________</strong>    <strong>__________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>________</strong>    <strong>_______________</strong>    <strong>______</strong>    <strong>___________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>____________</strong>    <strong>_____________</strong>    <strong>_______________</strong>    <strong>_________</strong>    <strong>_________</strong>    <strong>______________</strong>    <strong>______________</strong>    <strong>___________________</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    10                20              1           0.05          0.025       50                 0           NaN                0         1              0             0               0             0               [1x1 struct]     0                  0            0            0                 1                 0                      0                        1                        28    28     1    1         
+
+    <strong>storeMaxMSENet</strong><strong>    verifyBP</strong><strong>    displayConvNet</strong><strong>    batchIdx</strong><strong>    iter</strong><strong>    samplesLearned</strong><strong>    maxsucessRate</strong><strong>    noImprovementCount</strong><strong>    minMSE</strong><strong>    improvementRefMSE</strong><strong>      endSeed   </strong><strong>    datasetInfo </strong>
+    <strong>______________</strong>    <strong>________</strong>    <strong>______________</strong>    <strong>________</strong>    <strong>____</strong>    <strong>______________</strong>    <strong>_____________</strong>    <strong>__________________</strong>    <strong>______</strong>    <strong>_________________</strong>    <strong>____________</strong>    <strong>____________</strong>
+
+    0                 1           0                 0           0       0                 0                0                     Inf       Inf                  [1x1 struct]    [1x1 struct]
+
+Layer 1: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>      kernel   </strong><strong>        pad    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       12       5    5    1    2    2    0    1                   28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    1    1    1    28    28     1    312           [1x28 double]    [1x28 double]    [1]
+
+Layer 2: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>        kernel    </strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    inputDim</strong><strong>      stride   </strong><strong>        pad    </strong><strong>      pooling  </strong><strong>         out      </strong><strong>    numWeights</strong><strong>                indexesStride            </strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>______________</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>___________</strong>    <strong>______________</strong>    <strong>__________</strong>    <strong>_____________________________________</strong>
+
+    2       24       13    13     1    12                  28    28     1       1          [1x1 function_handle]    [1x1 function_handle]    2           1    1    1    0    0    0    1    1    1    16    16     1    48696         [1x16 double]    [1x16 double]    [1]
+
+Layer 3: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       128      24                  16    16     1       1          [1x1 function_handle]    [1x1 function_handle]    1      7.8656e+05
+
+Layer 4: Activation=Sigmoid, dActivation=dSigmoid
+    <strong>type</strong><strong>    numFm</strong><strong>    numFmInPrevLayer</strong><strong>    sizeFmInPrevLayer</strong><strong>    dropOut</strong><strong>         Activation      </strong><strong>         dActivation     </strong><strong>    out</strong><strong>    numWeights</strong>
+    <strong>____</strong>    <strong>_____</strong>    <strong>________________</strong>    <strong>_________________</strong>    <strong>_______</strong>    <strong>_____________________</strong>    <strong>_____________________</strong>    <strong>___</strong>    <strong>__________</strong>
+
+    1       10       128                 1                    1          [1x1 function_handle]    [1x1 function_handle]    1      1290      
+
+Network properties:
+
+    <strong>numLayers</strong><strong>    numOutputs</strong><strong>    version</strong><strong>      sources   </strong><strong>    numWeights</strong><strong>      sizeInput   </strong><strong>    InputNumFm</strong>
+    <strong>_________</strong>    <strong>__________</strong>    <strong>_______</strong>    <strong>____________</strong>    <strong>__________</strong>    <strong>______________</strong>    <strong>__________</strong>
+
+    4            10            1.1        [4x1 struct]    8.3686e+05    28    28     1    1         
+
+Verifying backProp..Network is OK. Verification time=13.48
+Start training iterations
+Iter 1  | Imgs=10   | time=1.33  | TrainErr=0.244901 | meanGrad=0.118194 | meanWeight=0.010797 | varWeight=0.000211 | MSE=3.570452 | scesRate=15.00% | minMSE=3.570452 | maxS=15.00% | ni=0.050000 | tstTime=0.28 | totalTime=1.78 | noImpCnt=0/50
+Iter 2  | Imgs=20   | time=1.20  | TrainErr=0.200360 | meanGrad=0.087328 | meanWeight=0.010801 | varWeight=0.000211 | MSE=3.481853 | scesRate=20.00% | minMSE=3.481853 | maxS=20.00% | ni=0.050000 | tstTime=0.27 | totalTime=4.48 | noImpCnt=0/50
+Iter 3  | Imgs=30   | time=1.16  | TrainErr=0.194571 | meanGrad=0.086351 | meanWeight=0.010807 | varWeight=0.000211 | MSE=3.458612 | scesRate=5.00 % | minMSE=3.458612 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=6.88 | noImpCnt=0/50
+Iter 4  | Imgs=40   | time=1.14  | TrainErr=0.193170 | meanGrad=0.083471 | meanWeight=0.010811 | varWeight=0.000212 | MSE=3.668159 | scesRate=5.00 % | minMSE=3.458612 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=9.30 | noImpCnt=0/50
+Iter 5  | Imgs=50   | time=1.15  | TrainErr=0.191515 | meanGrad=0.082881 | meanWeight=0.010813 | varWeight=0.000212 | MSE=3.658775 | scesRate=20.00% | minMSE=3.458612 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=11.67 | noImpCnt=1/50
+Iter 6  | Imgs=60   | time=1.17  | TrainErr=0.187128 | meanGrad=0.075392 | meanWeight=0.010818 | varWeight=0.000212 | MSE=3.172179 | scesRate=20.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=14.06 | noImpCnt=2/50
+Iter 7  | Imgs=70   | time=1.16  | TrainErr=0.175904 | meanGrad=0.070335 | meanWeight=0.010822 | varWeight=0.000212 | MSE=3.540181 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=16.52 | noImpCnt=0/50
+Iter 8  | Imgs=80   | time=1.14  | TrainErr=0.181853 | meanGrad=0.067174 | meanWeight=0.010827 | varWeight=0.000212 | MSE=3.479418 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=18.97 | noImpCnt=1/50
+Iter 9  | Imgs=90   | time=1.15  | TrainErr=0.189575 | meanGrad=0.060397 | meanWeight=0.010831 | varWeight=0.000212 | MSE=3.196058 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=21.34 | noImpCnt=2/50
+Iter 10 | Imgs=100  | time=1.14  | TrainErr=0.188382 | meanGrad=0.062860 | meanWeight=0.010836 | varWeight=0.000212 | MSE=3.426149 | scesRate=0.00 % | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=23.70 | noImpCnt=3/50
+Iter 11 | Imgs=110  | time=1.14  | TrainErr=0.183338 | meanGrad=0.054774 | meanWeight=0.010842 | varWeight=0.000213 | MSE=3.392336 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.23 | totalTime=26.07 | noImpCnt=4/50
+Iter 12 | Imgs=120  | time=1.15  | TrainErr=0.179262 | meanGrad=0.049297 | meanWeight=0.010849 | varWeight=0.000213 | MSE=3.334433 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=28.42 | noImpCnt=5/50
+Iter 13 | Imgs=130  | time=1.14  | TrainErr=0.183821 | meanGrad=0.054239 | meanWeight=0.010856 | varWeight=0.000213 | MSE=3.338269 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=30.78 | noImpCnt=6/50
+Iter 14 | Imgs=140  | time=1.14  | TrainErr=0.191506 | meanGrad=0.051469 | meanWeight=0.010860 | varWeight=0.000213 | MSE=3.286121 | scesRate=15.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=33.23 | noImpCnt=7/50
+Iter 15 | Imgs=150  | time=1.14  | TrainErr=0.187245 | meanGrad=0.051035 | meanWeight=0.010866 | varWeight=0.000214 | MSE=3.486221 | scesRate=10.00% | minMSE=3.172179 | maxS=20.00% | ni=0.050000 | tstTime=0.25 | totalTime=35.58 | noImpCnt=8/50
+Finish training. max samples reached
